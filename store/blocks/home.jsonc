@@ -2,7 +2,8 @@
   "store.home": {
     "blocks": [
       "flex-layout.row",
-      "shelf"
+      "shelf",
+      "slider-layout#home"
     ]
   },
   "flex-layout.col":{
@@ -26,8 +27,7 @@
       "callToActionText": "Discover",
       "textPosition": "center"
     }
-  },
-  
+  },  
   "image#electronics": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",

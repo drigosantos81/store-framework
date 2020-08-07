@@ -1,5 +1,5 @@
 {
-    "shelf": {
+  "shelf": {
     "blocks": ["product-summary.shelf"],
     "props": {
       "category": 1,
@@ -13,7 +13,7 @@
         "arrows": true,
         "titleText": "Top sellers"
       }
-    }
+   }
   },
   "product-summary.shelf": {
     "children": [
