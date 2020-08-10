@@ -17,10 +17,7 @@
     ]
   },
   "flex-layout.row":{
-    "children": [
-      "info-card#rethink",
-      "flex-layout.col"
-    ]
+    "children": ["info-card#rethink", "flex-layout.col"]
   },
   "responsive-layout.desktop#desktop": {
     "children": ["rich-text#desktop", "image#desktop"]
