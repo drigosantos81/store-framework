@@ -1,10 +1,20 @@
 {
+// BLOCOS
   "store.product": {
     "children": [
+      "breadcrumb",
       "flex-layout.row#main"
+      
     ]
   },
-
+// INSTÂNCIAS
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true,
+      "homeIconSize": 26,
+      "caretIconSize": 8
+    }
+  },
   "flex-layout.row#main": { 
     "props": { 
       "marginTop": 6
@@ -22,7 +32,10 @@
   "flex-layout.col#right": {
     "children": [
       "product-name",
+      "product-identifier.product",
       "product-price",
+      "flex-layout.row#qty-sku",
+      "shipping-simulator",
       "buy-button"
     ],
     "props": {
@@ -30,7 +43,22 @@
       "preventVerticalStretch": true
     }
   },
-
+// EXIBIÇÃO
+  "flex-layout.row#qty-sku": {
+    "children": [
+      "sku-selector",
+      "product-quantity"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+  "sku-selector": {
+    "props": {
+      "hideImpossibleCombinations": false
+    }
+  },
   "product-images": {
     "props": {
       "displayThumbnailsArrows": true ,
@@ -47,6 +75,9 @@
       "showBrandName": true
     }
   },
+  "product-identifier.product": {
+
+  },
   "product-price": {
    "props": {
     // "labelSellingPrice": "To",
@@ -61,7 +92,7 @@
    }
   },
   "buy-button": {
-    "props":{
+    "props": {
       // "preventVerticalStretch": false,
       // "verticalAlign": "top",
       "isOneClickBuy": true,
@@ -69,43 +100,3 @@
     }    
   }
 }
-
-
-// {
-//   "store.product": {
-//     "children": [
-//       "flex-layout.row#main"
-//     ]
-//   },
-//   "flex-layout.row#main": { 
-//     "props": { 
-//       "marginTop": 6
-//     },
-//     "children": [
-//       "flex-layout.col#left",
-//       "flex-layout.col#right"
-//     ]
-//   },
-//   "flex-layout.col#left": {
-//     "children": [
-//       "product-images"
-//     ]
-//   },
-//   "flex-layout.col#right": {
-//     "children": [
-//       "product-name",
-//       "product-price",
-//       "buy-button"
-//     ],
-//     "props": {
-//       "verticalAlign": "middle",
-//       "preventVerticalStretch": true
-//     }
-//   },
-//   "product-price": {
-//    "props": {
-//      "showSavings": true,
-//      "showListPrice": true
-//    }
-//   }
-// }
